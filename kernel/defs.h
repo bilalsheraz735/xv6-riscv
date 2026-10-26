@@ -78,6 +78,8 @@ int             printk(char*, ...) __attribute__ ((format (printf, 1, 2)));
 void            panic(char*) __attribute__((noreturn));
 void            printkinit(void);
 
+int             countactiveprocs(void);
+
 // proc.c
 int             cpuid(void);
 void            kexit(int);

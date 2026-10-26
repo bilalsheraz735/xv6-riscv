@@ -23,6 +23,12 @@ sys_getpid(void)
 }
 
 uint64
+sys_getnproc(void)
+{
+  return countactiveprocs();
+}
+
+uint64
 sys_fork(void)
 {
   return kfork();
